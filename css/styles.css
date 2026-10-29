@@ -1,0 +1,245 @@
+/* ===== Global Styles ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* ===== Navigation ===== */
+
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #0d6efd;
+}
+
+/* ===== Header ===== */
+
+header {
+    background: linear-gradient(135deg, #0056b3, #0d6efd);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* ===== Button ===== */
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: white;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+}
+
+/* ===== Sections ===== */
+
+section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 80px 10%;
+}
+
+h2 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.about-text {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+/* ===== Services ===== */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.card h3 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* ===== Reviews ===== */
+
+.reviews {
+    background: #eef4ff;
+}
+
+.review {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .08);
+}
+
+.review p {
+    margin-top: 10px;
+}
+
+.rating {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* ===== Contact ===== */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+iframe {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+
+form {
+    max-width: 650px;
+    margin: 40px auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #0d6efd;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    background: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+}
